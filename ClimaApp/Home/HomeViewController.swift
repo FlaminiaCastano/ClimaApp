@@ -25,7 +25,8 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        txtCiudad.text = "Buenos Aires"
+        txtCiudad.text = "Santa Fe"
+        activityLoading.isHidden = true 
         searchWeatherCity()
     }
 
@@ -49,7 +50,7 @@ class HomeViewController: UIViewController {
         
         firstly {
             when(fulfilled:
-                    APIClima.weatherPrimises(city),
+                    APIClima.weatherPromises(city),
                     APIClima.descriptionDayPromises(city)
             )
         }
