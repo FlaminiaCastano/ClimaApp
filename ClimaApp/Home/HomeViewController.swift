@@ -88,5 +88,11 @@ class HomeViewController: UIViewController {
         }
             return city
     }
+    
+    //Cierra el teclado
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // oculta el teclado
+        return true
+    }
 }
 
