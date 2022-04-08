@@ -80,7 +80,7 @@ class HomeViewController: UIViewController {
     
     func validateEmptyFields(_ city: String) -> String{
         if city.isEmpty{
-            let alert = UIAlertController(title: "Weather", message: "Complete el campo vacío", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Ciudad", message: "Complete el campo vacío", preferredStyle: .alert)
             
             let accept = UIAlertAction(title: "Aceptar", style: .default)
             
