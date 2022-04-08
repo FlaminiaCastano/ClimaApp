@@ -21,13 +21,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpView()
         
-        
+    }
+
+    func setUpView() {
         fondoView.layer.cornerRadius = 15
         fondoView.layer.borderColor = UIColor(named: "#5CE1E6")?.cgColor
         fondoView.layer.borderWidth = 2
     }
-
 
     @IBAction func buscarButton(_ sender: Any) {
     }
