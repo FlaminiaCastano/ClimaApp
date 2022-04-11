@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
 
     
     func searchWeatherCity() {
+        
         activityLoading.isHidden = false
         activityLoading.startAnimating()
         

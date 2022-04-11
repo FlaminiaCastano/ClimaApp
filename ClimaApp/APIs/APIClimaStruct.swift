@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - Welcome
+// MARK: - APIData
 struct APIData: Codable {
     let coord: Coord
     let weather: [Weather]
@@ -70,5 +70,5 @@ struct Weather: Codable {
 struct Wind: Codable {
     let speed: Double
     let deg: Int
-    let gust: Double
 }
+
